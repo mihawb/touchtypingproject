@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Typing</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="wrap">
+            <p class="word">text</p>
+            <p class="indicator"></p>
+        </div>
+        <p class="word" style="opacity: 0%;">.</p>
+        <p class="indicator" style="opacity: 0%;">.</p>
+
+        <input type="text" class="rawinput" placeholder="start typing">
+    </div>
+
+    <div class="footer">
+        <p class="length">Length: 12</p>
+        <input type="range" class="rawslider" name="rawslider" min="3" max="21" step="1">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

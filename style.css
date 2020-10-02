@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #f2aaaa, skyblue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.wrap {
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.word {
+    margin-bottom: 0;
+}
+
+.indicator {
+    margin-top: -4%;
+    margin-bottom: 0;
+    color: #f22fab;
+}
+
+.rawinput {
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+.rawinput:focus {
+    outline-width: 0;
+}
+
+.rawinput::placeholder {
+  transition: transform .2s ease-in-out, opacity .15s ease-in-out;
+}
+
+.rawinput:focus::placeholder {
+  opacity: 0;
+  transform: translateX(600px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 1vw;
+}
